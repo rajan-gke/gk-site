@@ -13,6 +13,8 @@ PAGES = {
                          "Explore Gurukrupa Export’s diamond jewellery collections: Desert Queen, Kadaksha, Blossom, Kanchi and more.", "collections"),
     "why-gurukrupa.html": ("Why Gurukrupa — Design, Manufacturing & Partner Technology",
                            "End-to-end diamond jewellery manufacturing for brands and retailers: design, CAD, close-setting, quality and a cloud ERP partner portal.", "why"),
+    "sustainability.html": ("sustainability Gurukrupa Export — Legacy, Leadership & Sustainability",
+                       "Since 1962, three generations of the Ramani family have built Gurukrupa Export into one of India’s leading diamond jewellery manufacturers.", "about"),
     "contact.html": ("Contact Gurukrupa Export — Trade Enquiries & Offices Across India",
                      "Trade enquiries, partnerships and careers. Offices in Surat, Mumbai, Chennai, Bengaluru, Coimbatore and Hyderabad.", "contact"),
 }
@@ -37,7 +39,7 @@ def nav_link(href, label, key, active):
 
 def header(active):
     links = [("index.html", "Home", "home"), ("about.html", "About", "about"), ("collections.html", "Collections", "collections"),
-             ("why-gurukrupa.html", "Why Gurukrupa", "why"), ("about.html#sustainability", "Sustainability", "sus"), ("contact.html", "Contact", "contact")]
+             ("why-gurukrupa.html", "Why Gurukrupa", "why"), ("about.html#sustainability", "Sustainability", "sus"), ("contact.html", "Contact", "contact"),("sustainability.html", "Sustainability", "sus")]
     menu = "".join(nav_link(h, l, k, active) for h, l, k in links)
     mob = "".join(f'<a href="{h}">{l}</a>' for h, l, k in links)
     return f'''<div class="preloader" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 18 L18 8 H30 L38 18 L24 40 Z M10 18 H38 M18 8 L24 18 L30 8 M24 18 L24 40"/></svg></div>
